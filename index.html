@@ -52,7 +52,15 @@ header.dark-mode {
   transition: all 0.3s ease;
   margin-top: 10px;
 }
+.grid-item.active {
+  background-color: #007bff;
+  color: white; /* 全体の文字色を白くする */
+}
 
+.grid-item.active .class-name,
+.grid-item.active .class-time {
+  color: white; /* 名前と時間部分の文字色を明確に白く指定 */
+}
 #toggle-dark-mode:hover {
   background-color: #0056b3;
 }
@@ -340,5 +348,6 @@ footer.dark-mode {
   </script>
 </body>
 </html>
+
 
 
