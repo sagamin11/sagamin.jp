@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f7fc;
-  color: #333; /* ここで文字色を黒に設定 */
+  color: #333; 
   transition: all 0.3s ease;
 }
 
@@ -21,7 +21,7 @@ body.dark-mode {
 
 header {
   background-color: #007bff;
-  color: black; /* 文字色を黒に変更 */
+  color: black;
   padding: 15px;
   text-align: center;
   font-size: 24px;
@@ -78,7 +78,7 @@ header.dark-mode {
 .day-container h2 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: black; /* 文字色を黒に設定 */
+  color: black; 
   text-transform: uppercase;
 }
 
@@ -111,7 +111,7 @@ body.dark-mode .grid-item {
 .class-name {
   font-size: 18px;
   font-weight: bold;
-  color: black; /* 文字色を黒に変更 */
+  color: black; 
 }
 
 .class-time {
@@ -125,7 +125,7 @@ body.dark-mode .grid-item {
       margin-bottom: 15px;
       color: #007bff;
       text-transform: uppercase;
-      text-align: center; /* これで曜日タイトルを中央に配置 */
+      text-align: center; 
     }
 
 footer {
@@ -141,7 +141,7 @@ footer.dark-mode {
   background-color: #0056b3;
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
   header {
     font-size: 20px;
@@ -188,9 +188,9 @@ footer.dark-mode {
         <div class="class-name">リベラルアーツ基礎（人文科学）</div>
         <div class="class-time">13:15 - 14:05</div>
       </a>
-      <a class="grid-item" data-days="1" data-end-time="16:15" data-start-time="16:05" href="https://www.nnn.ed.nico/courses/302"target="_blank">
+      <a class="grid-item" data-days="1" data-end-time="16:05" data-start-time="15:15" href="https://www.nnn.ed.nico/courses/302"target="_blank">
         <div class="class-name">一般教養（数学）</div>
-        <div class="class-time">16:05 - 16:15</div>
+        <div class="class-time">15:15 - 16:05</div>
       </a>
     </div>
   </div>
@@ -280,23 +280,23 @@ footer.dark-mode {
         <div class="class-name">プロジェクトNα</div>
         <div class="class-time">09:45 - 11:35</div>
       </a>
-      <a class="grid-item" data-days="5" data-end-time="12:35" data-start-time="10:45" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/Njc4NTI4ODA3OTIy"target="_blank">
+      <a class="grid-item" data-days="5" data-end-time="11:35" data-start-time="09:45" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/Njc4NTI4ODA3OTIy"target="_blank">
         <div class="class-name">プロジェクトNβ</div>
         <div class="class-time">09:45 - 11:35</div>
       </a>
-      <a class="grid-item" data-days="5" data-end-time="14:05" data-start-time="13:15" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/Njc1NDAwMzMwNzA4"target="_blank">
+      <a class="grid-item" data-days="5" data-end-time="12:35" data-start-time="11:45" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/Njc1NDAwMzMwNzA4"target="_blank">
         <div class="class-name">目標設定</div>
         <div class="class-time">11:45 - 12:35</div>
       </a>
-      <a class="grid-item" data-days="5" data-end-time="16:05" data-start-time="15:15" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/Njc4NDE2OTgxNDgy"target="_blank">
+      <a class="grid-item" data-days="5" data-end-time="14:05" data-start-time="13:15" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/Njc4NDE2OTgxNDgy"target="_blank">
         <div class="class-name">リベラルアーツ基礎（自然科学）</div>
         <div class="class-time">13:15 - 14:05</div>
       </a>
-      <a class="grid-item" data-days="5" data-end-time="16:05" data-start-time="15:15" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/NzIxMTMzOTQzNTcw"target="_blank">
+      <a class="grid-item" data-days="5" data-end-time="15:05" data-start-time="14:15" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/NzIxMTMzOTQzNTcw"target="_blank">
         <div class="class-name">英語検定対策2級</div>
         <div class="class-time">14:15 - 15:05</div>
       </a>
-      <a class="grid-item" data-days="4" data-end-time="12:35" data-start-time="11:45" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/NjkyODQ2MDUyMDM5"target="_blank">
+      <a class="grid-item" data-days="4" data-end-time="16:05" data-start-time="15:15" href="https://classroom.google.com/w/NjU2MTczMTA5OTI5/tc/NjkyODQ2MDUyMDM5"target="_blank">
         <div class="class-name">キャンパス授業</div>
         <div class="class-time">15:15 - 16:05</div>
       </a>
@@ -310,7 +310,7 @@ footer.dark-mode {
       const currentTime = new Date
       const currentHour = currentTime.getHours();
       const currentMinute = currentTime.getMinutes();
-      const currentDay = currentTime.getDay(); // 0:日曜日, 1:月曜日, ... 6:土曜日
+      const currentDay = currentTime.getDay(); 
 
       const daysOfWeek = [
         "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"
@@ -336,8 +336,9 @@ footer.dark-mode {
     }
 
     setActiveClass();
-    setInterval(setActiveClass, 60000); // 1分ごとに更新
+    setInterval(setActiveClass, 60000); 
   </script>
 </body>
 </html>
+
 
